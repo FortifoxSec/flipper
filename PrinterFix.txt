@@ -1,0 +1,21 @@
+REM // Our printer sucks - this will fix around 95% of the issues //
+
+STRING Stop-Service -Name Spooler -Force
+ENTER
+DELAY 500
+STRING cd C:\Windows\System32\spool\PRINTERS
+ENTER
+STRING ls
+ENTER
+DELAY 500
+STRING rm *
+ENTER
+DELAY 500
+STRING ls
+ENTER
+STRING Start-Service -Name Spooler
+ENTER
+STRING CLS
+ENTER
+STRING Get-Service Spooler
+ENTER
